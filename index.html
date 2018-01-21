@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" ">
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery</title>
+    <link rel="icon" href="images/jquery.png" />
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/normalize.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#1").click(function () {
+                $(this).hide();
+            });
+            $("button").on({
+                click: function () {
+                    $(this).html("clicked")
+                },
+
+                mouseenter: function () {
+                    $(this).css("background-color", "blue");
+                },
+
+                mouseleave: function () {
+                    $(this).css("background-color", "red");
+                },
+
+                dblclick: function () {
+                    $(this).animate({ left:'400px'});
+                }
+            });
+
+            $("tr:even").css("background-color", "#ffff99");
+
+
+        });
+    </script>
+
+
+        <style type="text/css">
+            .auto-style1 {
+                width: 100%;
+                border-collapse: collapse;
+                border-style: solid;
+                border-width: 1px;
+            }
+            button{
+                position:absolute;
+            }
+            table{
+                clear:both;
+            }
+        </style>
+    </head>
+<body>
+    
+<p id="1">If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+    <button>click here</button>
+
+    <table cellpadding="2" class="auto-style1">
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+</body>
+</html>
